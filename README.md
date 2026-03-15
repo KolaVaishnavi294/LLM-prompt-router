@@ -50,10 +50,12 @@ Request logged to `route_log.jsonl`
 
 ```bash
 git clone <your-repo-url>
-cd llm-prompt-router
+cd LLM-prompt-router
 ```
 ### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 ### 3. Create environment file
 
 Create a .env file in the project root:
@@ -82,7 +84,7 @@ Detected Intent: {'intent': 'code', 'confidence': 0.9}
 Assistant:
 You can sort a list in Python using sorted() or list.sort().
 
-# To exit the application:
+### To exit the application:
 ```bash
 exit
 ```
@@ -106,14 +108,14 @@ docker run -it llm-prompt-router-prompt-router
 - Supported Intents
 
 ### The system currently supports five intents:
-
+```bash
 | Intent	|  Description                              |
 | code	    |  Programming and coding questions         |
 | data	    |  Data analysis or statistical questions   |
 | writing	|  Writing improvement or grammar help      |
 | career	|  Career advice or job preparation         |
 | unclear	|  Messages that cannot be classified       |
-
+```
 Each intent routes to a specialized expert system prompt.
 
 ### Logging System
